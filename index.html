@@ -1,10 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ung dung may tinh</title>
+
 </head>
 <body>
-$END$
+<style>
+    .nut {
+        padding: 15px;
+        border-radius: 3px;
+        margin: 10px 21px 20px 0px;
+        font-size: 20px;
+    }
+
+    #keyboard {
+        margin: 20px 50px;
+    }
+
+    #display {
+        font-size: 20px;
+    }
+</style>
+<div id="caculator" style="width: 500px;height:500px;background: black;">
+    <H3 style="text-align: center;color: #fff;">Caculator</H3>
+    <input id="display" type="text" style="width: 400px;height: 50px;margin: 20px 50px;">
+    <div id="keyboard">
+        <input id="C" class="nut" type="button" value="C" onclick="delNumber(); ">
+        <input id="zero" class="nut" type="button" value="0" onclick="clickButton(this.value);">
+        <input id="one" class="nut" type="button" value="1" onclick="clickButton(this.value);">
+        <input id="two" class="nut" type="button" value="2" onclick="clickButton(this.value);">
+        <input id="three" class="nut" type="button" value="3" onclick="clickButton(this.value);"></br>
+        <input id="four" class="nut" type="button" value="4" onclick="clickButton(this.value);"
+        <input id="five" class="nut" type="button" value="5" onclick="clickButton(this.value);">
+        <input id="six" class="nut" type="button" value="6" onclick="clickButton(this.value);">
+        <input id="seven" class="nut" type="button" value="7" onclick="clickButton(this.value);">
+        <input id="eight" class="nut" type="button" value="8" onclick="clickButton(this.value);">
+        <input id="nine" class="nut" type="button" value="9" onclick="clickButton(this.value);"></br>
+        <input id="add" class="nut" type="button" value="+" onclick="clickButton(this.value);">
+        <input id="sub" class="nut" type="button" value="-" onclick="clickButton(this.value);">
+        <input id="nhan" class="nut" type="button" value="*" onclick="clickButton(this.value);">
+        <input id="chia" class="nut" type="button" value="/" onclick="clickButton(this.value);">
+        <input id="bang" class="nut" type="button" value="=" onclick="evalMath();">
+
+    </div>
+</div>
+<script src="javascript.js"></script>
 </body>
 </html>
